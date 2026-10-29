@@ -129,7 +129,8 @@ The build output is a fully static folder (`dist/`). Deploy it to any static hos
 
 | Host | Notes |
 |---|---|
-| **Netlify** | Drag and drop `dist/`, or connect the repo. Add a `_redirects` file: `/* /index.html 200` |
+| **Cloudflare Pages** | Connect repository or upload `dist/`. SPA routing is automatic (no `_redirects` needed). Build command: `npm run build`, Build output directory: `dist`. |
+| **Netlify** | Drag and drop `dist/`, or connect the repo. If needed, add a `_redirects` file: `/* /index.html 200` |
 | **Vercel** | Import the repo; set output directory to `dist`. |
 | **GitHub Pages** | Push `dist/` to a `gh-pages` branch. |
 | **cPanel / shared hosting** | Upload the contents of `dist/` to `public_html/`. Add an `.htaccess` with `FallbackResource /index.html`. |
